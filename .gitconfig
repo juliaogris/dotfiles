@@ -1,0 +1,40 @@
+[user]
+    name = Julia Ogris
+    email = julia.ogris@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    lg = log --oneline
+    hist = "!f() { git --no-pager log --color --pretty=format:'%C(yellow)%h%C(reset) %<(50,trunc)%s  %C(white dim) %<(10,trunc) %an %C(reset)%C(bold red)%<(28,trunc)%d %C(reset) ' --relative-date $@ | head -20 | less --RAW-CONTROL-CHARS;}; f"
+    pr = "!f(){ case \"$1\" in (new) shift; hub pull-request \"$@\";; (merge) shift; git-pr-merge \"$@\";; (*) printf 'unknown: %s\n' \"$1\" ; exit 1;; esac; }; f"
+    rework   = "!f() { git rebase -i --keep-base \"${@:-$(git trunk)}\"; }; f"
+    trunk    = "!git show-ref -q refs/heads/main && echo main || echo master"
+[core]
+    editor = subl -n -w
+[push]
+    default = current
+[pull]
+    rebase = true
+    default = current
+[pager]
+    branch = false
+[rebase]
+    autosquash = true
+[hub]
+    host = github.com
+    protocol = https
+[help]
+    autocorrect = 1
+[pr]
+    label = automerge
+[pr "merge"]
+    sleep-time-before-delete = 0
+    squash-singles = true
+[new]
+	use-github = true
+[init]
+	defaultBranch = main
