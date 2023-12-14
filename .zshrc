@@ -11,7 +11,7 @@ alias la="ls -AG"
 alias ll="ls -lAG"
 
 export PATH="$PATH:/Users/julia/bin"
-export PATH="$PATH:/Users/julia/Development/git-scripts"
+export PATH="/opt/go/stable/bin:$PATH"
 export GOPATH="/Users/julia/go"
 export EDITOR="subl -w"
 export LESS="-F -X $LESS"
