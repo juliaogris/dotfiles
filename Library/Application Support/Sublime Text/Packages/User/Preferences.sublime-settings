@@ -1,0 +1,21 @@
+{
+	"spell_check": true,
+	"ignored_packages": ["Vintage",
+	],
+	"added_words":
+	[
+		"deeplly"
+	],
+	"theme": "GitHub Dimmed.sublime-theme",
+	"color_scheme": "GitHub Dimmed.sublime-color-scheme",
+	"font_size": 15,
+    "font_face": "Fira Code",
+    "highlight_line": true,
+    "line_padding_bottom": 2,
+    "line_padding_top": 3,
+    "caret_extra_bottom": 2,
+    "caret_extra_top": 2,
+    "hide_tab_scrolling_buttons": true,
+    "trim_trailing_white_space_on_save": "all",
+    "ensure_newline_at_eof_on_save": false,
+}
