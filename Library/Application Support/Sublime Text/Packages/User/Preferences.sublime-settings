@@ -4,11 +4,21 @@
 	],
 	"added_words":
 	[
-		"deeplly"
+		"deeplly",
+		"awk",
+		"md",
+		"evy",
+		"dev",
+		"evylang",
+		"Ogris",
+		"todo",
+		"Makefile",
+		"frontend",
+		"firebase",
 	],
 	"theme": "GitHub Dimmed.sublime-theme",
 	"color_scheme": "GitHub Dimmed.sublime-color-scheme",
-	"font_size": 16,
+	"font_size": 19,
 	"font_face": "Fira Code",
 	"font_options": ["no_calt"],
 	"highlight_line": true,
@@ -18,5 +28,6 @@
 	"caret_extra_top": 2,
 	"hide_tab_scrolling_buttons": true,
 	"trim_trailing_white_space_on_save": "all",
-	"ensure_newline_at_eof_on_save": false,
+	"ensure_newline_at_eof_on_save": true,
+	"index_files": true,
 }
