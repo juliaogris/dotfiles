@@ -20,3 +20,9 @@ export EVY_DEFAULT_GOAL="all"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 HERMIT_ROOT_BIN="${HERMIT_ROOT_BIN:-"$HOME/bin/hermit"}"
 eval "$(test -x $HERMIT_ROOT_BIN && $HERMIT_ROOT_BIN shell-hooks --print --zsh)"
+
+gro() {
+	[[ -z "${1-}" ]] && { echo "usage: gro <N> [branch]"; return 1; }
+	local branch="${2:-$(git trunk)}"
+	git rebase --onto "${branch}" "@~$1"
+}
