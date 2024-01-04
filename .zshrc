@@ -26,3 +26,9 @@ gro() {
 	local branch="${2:-$(git trunk)}"
 	git rebase --onto "${branch}" "@~$1"
 }
+
+mk() {
+	local r
+	r=$(git rev-parse --show-toplevel) || return
+	make -C "${r}" "$@"
+}
