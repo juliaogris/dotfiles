@@ -9,6 +9,7 @@ alias reload="source /Users/julia/.zshrc"
 alias ls="ls -G"
 alias la="ls -AG"
 alias ll="ls -lAG"
+alias pw="npx playwright"
 
 export GOPATH="/Users/julia/go"
 export PATH="$PATH:/Users/julia/bin"
