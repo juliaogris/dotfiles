@@ -14,7 +14,7 @@ alias pw="npx playwright"
 export GOPATH="/Users/julia/go"
 export PATH="$PATH:/Users/julia/bin"
 export PATH="/opt/go/stable/bin:$GOPATH/bin:$PATH"
-export EDITOR="subl -w"
+export EDITOR="subl -wn"
 export LESS="-F -X $LESS"
 export EVY_DEFAULT_GOAL="all"
 
