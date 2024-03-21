@@ -9,7 +9,8 @@
     br = branch
     co = checkout
     lg = log --oneline
-    hist = "!f() { git --no-pager log --color --pretty=format:'%C(yellow)%h%C(reset) %<(50,trunc)%s  %C(white dim) %<(10,trunc) %an %C(reset)%C(bold red)%<(28,trunc)%d %C(reset) ' --relative-date $@ | head -20 | less --RAW-CONTROL-CHARS;}; f"
+    histl = "!f() { git --no-pager log --color --pretty=format:'%C(yellow)%h%C(reset) %<(50,trunc)%s  %C(white dim) %<(7,trunc) %an %C(reset)%C(bold red)%<(28,trunc)%D %C(reset) ' --relative-date $@ | head -20 | less --RAW-CONTROL-CHARS;}; f"
+    hist = "!f() { git --no-pager log --color --pretty=format:'%C(yellow)%h%C(reset) %<(45,trunc)%s  %C(white dim) %<(4,trunc) %an %C(reset)%C(bold red)%<(11,trunc)%D %C(reset) ' --relative-date $@ | head -20 | less --RAW-CONTROL-CHARS;}; f"
     pr = "!f(){ case \"$1\" in (new) shift; hub pull-request \"$@\";; (merge) shift; git-pr-merge \"$@\";; (*) printf 'unknown: %s\n' \"$1\" ; exit 1;; esac; }; f"
     rework = "!f() { git rebase -i --keep-base \"${@:-$(git trunk)}\"; }; f"
     trunk = "!git show-ref -q refs/heads/main && echo main || echo master"

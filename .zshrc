@@ -9,6 +9,8 @@ alias ls="ls -G"
 alias la="ls -AG"
 alias ll="ls -lAG"
 alias gsn="git show --name-only"
+alias glg="git histl"
+alias glgs="git hist"
 
 export GOPATH="/Users/julia/go"
 export PATH="$PATH:/Users/julia/bin"
