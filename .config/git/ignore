@@ -1,3 +1,5 @@
 .DS_Store
 .vscode
 .sublime*
+/test.evy
+/evy-lang-test-firebase-adminsdk-5ud3e-4ef53c5971.json
