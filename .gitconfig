@@ -14,6 +14,7 @@
     pr = "!f(){ case \"$1\" in (new) shift; hub pull-request \"$@\";; (merge) shift; git-pr-merge \"$@\";; (*) printf 'unknown: %s\n' \"$1\" ; exit 1;; esac; }; f"
     rework = "!f() { git rebase -i --keep-base \"${@:-$(git trunk)}\"; }; f"
     trunk = "!git show-ref -q refs/heads/main && echo main || echo master"
+    msg = log --no-walk --format=%B
 [core]
     editor = subl -n -w
 [push]
