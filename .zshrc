@@ -3,6 +3,9 @@ ZSH_THEME="julia"
 plugins=(git-julia)
 source "$ZSH/oh-my-zsh.sh"
 
+HISTSIZE=10000000
+SAVEHIST=10000000
+
 alias cde="cd /Users/julia/Development/evy"
 alias reload="source /Users/julia/.zshrc"
 alias ls="ls -G"
