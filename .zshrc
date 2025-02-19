@@ -6,7 +6,7 @@ source "$ZSH/oh-my-zsh.sh"
 HISTSIZE=10000000
 SAVEHIST=10000000
 
-alias cde="cd /Users/julia/Development/evy"
+alias e="cd /Users/julia/Development/evy"
 alias reload="source /Users/julia/.zshrc"
 alias ls="ls -G"
 alias la="ls -AG"
@@ -24,6 +24,7 @@ export GOPATH="/Users/julia/go"
 export PATH="$PATH:/Users/julia/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$GOPATH/bin:$PATH"
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 #export PATH="/opt/go/stable/bin:$GOPATH/bin:$PATH"
 export EDITOR="subl -wn"
 export LESS="-F -X $LESS"
